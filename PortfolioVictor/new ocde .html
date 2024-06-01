@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Produkt', sans-serif;
+            font-weight: 50;
+            font-size: 14pt;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-family: 'Produkt', sans-serif;
+            font-weight: 150; /* Extralight weight */
+            font-size: 50pt;
+            color: #87ceeb; /* Sky blue color */
+            text-decoration: none; /* Remove any underline or decoration */
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* About Section */
+        .about-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .about-image {
+            border-radius: 50%;
+            border: 13px solid #fff;
+            width: 350px;
+            height: 350px;
+            margin: 35px auto;
+            overflow: hidden;
+        }
+
+        .about-text {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            padding: 50px 0;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            margin-right: 10px;
+            padding: 6px 12px; /* Adjust the padding to control the button size */
+            font-size: 14px; /* Adjust the font size */
+            margin-right: 10px; /* Adjust the margin value as needed */
+            margin-bottom: 10px; /* Add this line */
+        }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+
+        #skills .card {
+            box-shadow: 0.5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s;
+            margin: 5px;
+        }
+
+        #skills .card:hover {
+            transform: scale(1.05);
+        }
+
+        #skills .card-img-top {
+            height: 70px;
+            object-fit: cover;
+        }
+
+        #skills .card-title {
+            font-size: .9rem;
+            font-weight: bold;
+        }
+
+        #skills .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Victor Watta: Data Scientists</h2>
+                <div class="about-image">
+                    <img src="Shot1.jpeg" class="img-fluid" alt="Profile Image">
+                </div>
+                <div class="about-text">
+                    <p>With a master's degree in Healthcare Administration, I possess extensive expertise in navigating the intricate landscape of healthcare revenue cycles. My proficiency spans medical insurance verification, coding, claim preparation, billing, and the management of claims receivables and payables. Complementing this subject matter knowledge is my passion for data-driven decision-making, which has driven me to hone my skills in SQL, Tableau, Excel, and Python. By leveraging these powerful data analysis tools.</p>
+                    <p>I am adept at transforming vast datasets into actionable insights that drive innovation and operational excellence within the healthcare industry. My experience encompasses exemplary customer service at a major hospital, business development in home health, and skilled nursing care administration during an internship, further enriching my comprehensive understanding of this dynamic field.</p>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <!-- Bike Store Project Card -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="Buying-a-bike.jpeg" class="card-img-top" alt="Bike Store Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Bike Store Project</h5>
+                            <p class="card-text">In this project, I used both exploratory and predictive data analysis to allow for optimization of customer engagement with Data-Driven Insights. The cutting-edge predictive analytics project was able to identify the likely customers to spend in the coming months. Enabling the Bike Store to tailor their marketing efforts, by aligning their offerings with anticipated sales, they were able to maximize profitability while delivering unparalleled customer satisfaction.</p>
+                            <p class="card-text">The analysis also supported inventory management strategies for maximum impact. Allowing the Bike Store to optimize inventory levels and streamlining supply chain operations. This data-driven approach minimizes waste, reduces overstocking, and ensures that they consistently meet the evolving demands of their discerning clientele. All these resulting into improved profitability.[2][4]</p>
+                            <a href="https://colab.research.google.com/drive/1z8OiDcEU0WOx6hqBhPRAYCpEJxoqC0g7?usp=drive_link" class="btn btn-primary" target="_blank">Source Code EDA</a>
+                            <a href="https://colab.research.google.com/drive/1gFl8mXo_Hyo2HXLUhZWRoTRRVfVGlNU_?usp=drive_link" class="btn btn-primary" target="_blank">Source Code Algorithm</a>
+                            <a href="https://drive.google.com/file/d/13YTyFBIlKKyeZeosJGUin4brbRVsWLYq/view?usp=drive_link" class="btn btn-primary" target="_blank">Project PPT</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Clinic Project Card -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="Readmit30.jpeg" class="card-img-top" alt="The Clinic Project">
+                        <div class="card-body">
+                            <h5 class="card-title">The Clinic Project</h5>
+                            <p class="card-text">The Clinic had been proactively addressing the critical issue of premature patient readmissions, post discharge. Which not only impacts the quality of life for patients but also poses significant financial implications to the Clinic. Through a data-driven approach, I undertook a comprehensive exploratory and predictive analysis to gain profound insights into the intricate patterns underlying readmission trends before the 30 days after discharge.</p>
+                            <p class="card-text">The primary objective was to identify the susceptible patients to enhance the post discharge care. By leveraging advanced analytical techniques and machine learning, I Was able to identify the patients. Allowing the Clinic to implement the most effective discharge plan, aimed to improve overall patient well-being, and facilitate a seamless transition back to their normal routines. The intervention reduced the likelihood of readmission within the critical 30-day window by a remarkable 8%. Translating into immeasurable improvements in the quality of life for the patients and their loved ones. Finally improving the revenue stream.</p>
+                            <a href="https://colab.research.google.com/drive/1wxdT_o4GmYsYxTpGdQS7m78ScCCqOJV1?usp=drive_link" class="btn btn-primary" target="_blank">Source Code EDA</a>
+                            <a href="https://colab.research.google.com/drive/10Lz0oNx6lsAXBquyOqUsy2R2H7qWbUKC?usp=drive_link" class="btn btn-primary" target="_blank">Source Code Algorithm</a>
+                            <a href="https://drive.google.com/file/d/1xopEdNJcjrsWK4kjnacMSunQRAk4sQVR/view?usp=drive_link" class="btn btn-primary" target="_blank">Project PPT</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local Coffee Store Project Card -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="coffeebuying1.jpeg" class="card-img-top" alt="Local Coffee Store Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Local Coffee Store Project</h5>
+                            <p class="card-text">In this Local Coffee Store, I embarked on a project to revolutionize their business strategy by employing both exploratory and predictive data analysis. The goal was to understand the intricate preferences and behaviors of their diverse customer base. Through a meticulous exploration of historical sales data, customer demographics, and purchasing patterns, I unveiled actionable insights that empowered the Local Coffee Store to optimize their operations and enhance customer satisfaction.</p>
+                            <p class="card-text">The analysis not only provided a granular understanding of customer preferences but also identified the key factors driving repeat business. By leveraging predictive analytics, I was able to forecast future sales trends, enabling the Local Coffee Store to tailor their offerings, marketing efforts, and inventory management to align with anticipated demand. The result was a significant boost in revenue, operational efficiency, and customer loyalty.</p>
+                            <a href="https://colab.research.google.com/drive/1px3cDUsOkS4N2NC9d-IAEwZ2VbFzL68h?usp=drive_link" class="btn btn-primary" target="_blank">Source Code EDA</a>
+                            <a href="https://colab.research.google.com/drive/1imKzyMmRS2OUgFi2w2VsDWFSyx_qba7p?usp=drive_link" class="btn btn-primary" target="_blank">Source Code Algorithm</a>
+                            <a href="https://drive.google.com/file/d/1TSdOTNG7pK1M-ndFLIVbj-aMrt5DNbH1/view?usp=drive_link" class="btn btn-primary" target="_blank">Project PPT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="py-5">
+       <div class="container">
+           <h2 class="text-center mb-4">Skills</h2>
+           <div class="row">
+               <!-- Skill 1 -->
+               <div class="col-md-2 col-sm-6 mb-4">
+                   <div class="card">
+                       <img src="DallasDataScienceAcademy.png" class="card-img-top" alt="Dallas Data Science Academy">
+                       <div class="card-body text-center">
+                           <h5 class="card-title">Data Science Academy</h5>
+                           <a href="https://dallasdatascienceacademy.org/" class="btn btn-primary">Link to bootcamp</a>
+                       </div>
+                   </div>
+               </div>
+               <!-- Skill 2 -->
+               <div class="col-md-2 col-sm-6 mb-4">
+                   <div class="card">
+                       <img src="IBM.png" class="card-img-top" alt="IBM">
+                       <div class="card-body text-center">
+                           <h5 class="card-title">IBM</h5>
+                       </div>
+                   </div>
+               </div>
+               <!-- Skill 3 -->
+               <div class="col-md-2 col-sm-6 mb-4">
+                   <div class="card">
+                       <img src="python.png" class="card-img-top" alt="Python">
+                       <div class="card-body text-center">
+                           <h5 class="card-title">Python</h5>
+                       </div>
+                   </div>
+               </div>
+               <!-- Skill 4 -->
+               <div class="col-md-2 col-sm-6 mb-4">
+                   <div class="card">
+                       <img src="SQL.PNG" class="card-img-top" alt="SQL">
+                       <div class="card-body text-center">
+                           <h5 class="card-title">SQL</h5>
+                       </div>
+                   </div>
+               </div>
+               <!-- Skill 5 -->
+               <div class="col-md-2 col-sm-6 mb-4">
+                   <div class="card">
+                       <img src="Tableau.PNG" class="card-img-top" alt="Tableau">
+                       <div class="card-body text-center">
+                           <h5 class="card-title">Tableau</h5>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+     </section>
+     
+     <!-- Existing Content -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
